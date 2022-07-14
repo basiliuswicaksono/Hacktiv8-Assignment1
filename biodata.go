@@ -43,7 +43,9 @@ func main() {
 }
 
 func (st students) Print(arg string) {
+	//string to int
 	intVar, _ := strconv.Atoi(arg)
+
 	if intVar > len(st) {
 		fmt.Println("Data tidak ditemukan")
 		return
